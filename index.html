@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="creative-nav">
+        <div class="nav-brand">
+            <span class="logo">&lt;/&gt;</span>
+            <span class="dev-name">Sridevi Srinivasan</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item" style="--i:1">
+                <i class="ri-home-smile-line"></i>
+                <span class="text">Home</span>
+            </a>
+            <a href="#" class="nav-item" style="--i:2">
+                <i class="ri-user-heart-line"></i>
+                <span class="text">About</span>
+            </a>
+            <a href="#" class="nav-item" style="--i:3">
+                <i class="ri-quill-pen-line"></i>
+                <span class="text">Blog</span>
+            </a>
+            <a href="#" class="nav-item" style="--i:4">
+                <i class="ri-chat-smile-3-line"></i>
+                <span class="text">Contact</span>
+            </a>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">👋 Hi folks, I'm</p>
+            <h1 class="hero-title">Sridevi Srinivasan</h1>
+            <h2 class="hero-subtitle"><span class="static-text">I'm a </span><span class="dynamic-text"></span></h2>
+            <p class="hero-description">
+                I craft responsive websites and web applications that bring ideas to life.
+                Specializing in modern web technologies and clean code practices.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="primary-btn">View My Work</a>
+                <a href="#contact" class="secondary-btn">Get in Touch</a>
+            </div>
+            <div class="hero-social">
+                <a href="#" class="social-link"><i class="ri-github-line"></i></a>
+                <a href="#" class="social-link"><i class="ri-linkedin-line"></i></a>
+                <a href="#" class="social-link"><i class="ri-twitter-line"></i></a>
+            </div>
+        </div>
+        
+        <div class="code-editor">
+            <div class="editor-frame">
+                <div class="editor-header">
+                    <div class="action-buttons">
+                        <button class="action-btn close"></button>
+                        <button class="action-btn minimize"></button>
+                        <button class="action-btn maximize"></button>
+                    </div>
+                    <div class="title">main.js</div>
+                </div>
+                <div class="editor-content">
+                    <div class="line-numbers">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                    </div>
+                    <div class="code-area">
+                        <code><span class="keyword">class</span> <span class="variable">Developer</span> {
+    <span class="property">name</span> = <span class="string">'Sridevi Srinivasan'</span>;
+    <span class="property">role</span> = <span class="string">'Full Stack Developer'</span>;
+    <span class="property">languages</span> = [<span class="string">'JavaScript'</span>, <span class="string">'Python'</span>, <span class="string">'Java'</span>];
+    
+    <span class="keyword">const</span> <span class="variable">code</span> = () => <span class="string">'Building amazing things...'</span>;
+}</code>
+                    </div>
+                </div>
+                <div class="glow-effect"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="section-header">
+                <span class="section-title">About Me</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <!-- Left Side -->
+                <div class="about-text">
+                    <h3>Let me introduce myself</h3>
+                    <p>I'm a passionate Full Stack Developer based in Chennai, specializing in building exceptional digital experiences. With a strong foundation in both front-end and back-end development, I create efficient, scalable, and user-friendly solutions.</p>
+                    <div class="key-points">
+                        <div class="point">
+                            <i class="ri-code-box-line"></i>
+                            <div>
+                                <h4>Development</h4>
+                                <p>Building responsive and performant web applications</p>
+                            </div>
+                        </div>
+                        <div class="point">
+                            <i class="ri-terminal-box-line"></i>
+                            <div>
+                                <h4>Clean Code</h4>
+                                <p>Writing maintainable and efficient code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side -->
+                <div class="profile-ring-container">
+                    <div class="profile-ring">
+                        <img src="#" alt="Profile" class="profile-image">
+                        <div class="orbit">
+                            <span class="skill-tag html">&lt;HTML5/&gt;</span>
+                            <span class="skill-tag css">CSS3</span>
+                            <span class="skill-tag js">JavaScript</span>
+                            <span class="skill-tag react">React</span>
+                            <span class="skill-tag node">Node.js</span>
+                            <span class="skill-tag sql">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="section-header">
+            <span class="section-title">My Work</span>
+            <div class="section-line"></div>
+        </div>
+        <div class="work-container">
+            <div class="work-sidebar-tabs">
+                <button class="sidebar-tab active" data-tab="all">
+                    <i class="ri-apps-line"></i>
+                    <span>All Projects</span>
+                    <span class="project-count">12</span>
+                </button>
+                <button class="sidebar-tab" data-tab="web">
+                    <i class="ri-window-line"></i>
+                    <span>Web Apps</span>
+                    <span class="project-count">5</span>
+                </button>
+                <button class="sidebar-tab" data-tab="mobile">
+                    <i class="ri-smartphone-line"></i>
+                    <span>Mobile Apps</span>
+                    <span class="project-count">4</span>
+                </button>
+                <button class="sidebar-tab" data-tab="design">
+                    <i class="ri-paint-brush-line"></i>
+                    <span>UI/UX Design</span>
+                    <span class="project-count">3</span>
+                </button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" data-content="all">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project1.jpg" alt="E-commerce Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="ri-github-line"></i></a>
+                                    <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce Dashboard</h3>
+                            <p>A full-stack e-commerce analytics dashboard with real-time data visualization and inventory management.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project2.jpg" alt="Task Manager App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="ri-github-line"></i></a>
+                                    <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Manager App</h3>
+                            <p>A collaborative task management application with real-time updates and team collaboration features.</p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project3.jpg" alt="Weather App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="ri-github-line"></i></a>
+                                    <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Weather Dashboard</h3>
+                            <p>A weather forecasting application with location tracking and detailed weather metrics.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Weather API</span>
+                                <span class="tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" data-content="web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project4.jpg" alt="Portfolio Website">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="ri-github-line"></i></a>
+                                    <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>A modern and responsive portfolio website with smooth animations and dark mode support.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Tailwind</span>
+                                <span class="tag">Framer Motion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" data-content="mobile">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project5.jpg" alt="Fitness Tracker">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="ri-github-line"></i></a>
+                                    <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Fitness Tracker App</h3>
+                            <p>A cross-platform mobile app for tracking workouts and nutrition with progress visualization.</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" data-content="design">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project6.jpg" alt="UI Design System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="ri-github-line"></i></a>
+                                    <a href="#" class="project-link"><i class="ri-external-link-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>UI Design System</h3>
+                            <p>A comprehensive design system with reusable components and design tokens.</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Storybook</span>
+                                <span class="tag">Design Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.querySelectorAll('.sidebar-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs and content
+                    document.querySelectorAll('.sidebar-tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.tab-pane').forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+                    
+                    // Show corresponding content
+                    const tabId = tab.dataset.tab;
+                    document.querySelector(`.tab-pane[data-content="${tabId}"]`).classList.add('active');
+                });
+            });
+        </script>
+    </section>
+
+    <script>
+        const roles = [
+            "Full Stack Developer",
+            "Web Designer",
+            "UI/UX Developer"
+        ];
+        
+        let roleIndex = 0;
+        const subtitleElement = document.querySelector('.dynamic-text');
+        
+        function typeRole(role) {
+            let charIndex = 0;
+            subtitleElement.textContent = '';
+            
+            function type() {
+                if (charIndex < role.length) {
+                    subtitleElement.textContent += role.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(type, 100);
+                } else {
+                    setTimeout(eraseRole, 2000);
+                }
+            }
+            
+            type();
+        }
+        
+        function eraseRole() {
+            const currentText = subtitleElement.textContent;
+            if (currentText.length > 0) {
+                subtitleElement.textContent = currentText.slice(0, -1);
+                setTimeout(eraseRole, 50);
+            } else {
+                roleIndex = (roleIndex + 1) % roles.length;
+                typeRole(roles[roleIndex]);
+            }
+        }
+        
+        typeRole(roles[0]);
+        document.querySelectorAll('.tag').forEach(tag => {
+            tag.addEventListener('mousemove', (e) => {
+                const rect = tag.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / tag.offsetWidth) * 100;
+                const y = ((e.clientY - rect.top) / tag.offsetHeight) * 100;
+                tag.style.setProperty('--x', `${x}%`);
+                tag.style.setProperty('--y', `${y}%`);
+            });
+        });
+
+        document.querySelectorAll('.sidebar-item').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.sidebar-item').forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+                // Add your filtering logic here
+            });
+        });
+    </script>
+</body>
+</html>
